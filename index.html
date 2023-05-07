@@ -40,7 +40,7 @@
                     });
 
                     // spawn a dropping
-                    let dropping = this.add.circle(x+10,y+10,2).setFillStyle(0,1);
+                    let dropping = this.add.text(x+10,y+10, Math.random() > 0.5 ? 'hurgle' : 'turgle', { color: 'black' } );
                     dropping.setDepth(-1); // below the mouse
 
                     // shoot away quickly
